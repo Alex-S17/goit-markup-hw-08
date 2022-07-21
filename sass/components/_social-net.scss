@@ -1,0 +1,46 @@
+.social-net {
+  display: flex;
+  width: 206px;
+  height: 44px;
+  /* margin: 0 32px 30px 32px; */
+  padding: 0;
+  justify-content: center;
+  list-style: none;
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  &__icon {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: var(--icon-bgr-color);
+    color: var(--icon-color);
+  
+
+    @include transition ($property: color background-color);
+    // transition-property: color, background-color;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &__icon-color {
+    fill: currentColor;
+  }
+  
+    /* Ховер по блоку иконки*/
+  &__icon:hover,
+  &__icon:focus {
+    background-color: var(--accent-color);
+    color: var(--accent-button-color);
+  }
+}
+
+.team-set__social-net {
+  margin: 0 32px 30px 32px;
+}

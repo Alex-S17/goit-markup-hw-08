@@ -1,0 +1,13 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid tomato; */
+  
+  &--flex {
+    display: flex;
+    border-bottom: 1px solid var(--border-bottom-header);
+  }
+}
+

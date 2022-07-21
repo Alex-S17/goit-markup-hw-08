@@ -1,0 +1,34 @@
+// utils styles
+@import "./utils/fonts";
+@import "./utils/vars";
+@import "./utils/class-utils";
+@import "./utils/visually-hidden";
+@import "./utils/mixins";
+
+// base styles
+@import "./base/common";
+@import "./base/reset";
+
+// components styles
+@import "./components/section";
+@import "./components/container";
+@import "./components/logo";
+@import "./components/section-title";
+@import "./components/section-subtitle";
+@import "./components/social-net";
+
+// layout styles
+@import "./layouts/header-nav";
+@import "./layouts/header-mail-address";
+@import "./layouts/hero";
+@import "./layouts/modal";
+@import "./layouts/modal-close-btn";
+@import "./layouts/modal-form";
+@import "./layouts/our-advantages";
+@import "./layouts/our-business";
+@import "./layouts/our-team";
+@import "./layouts/our-clients";
+@import "./layouts/footer";
+// layout styles on the portfolio page
+@import "./layouts/portfolio-menu";
+@import "./layouts/portfolio-cards";

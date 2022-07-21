@@ -1,0 +1,144 @@
+.footer {
+  padding: 60px 0;
+
+  color: var(--footer-font-color);
+  background-color: var(--footer-bgr-color);
+}
+
+.footer-set {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+// Footer Contacts
+.footer-contacts-set {
+  font-style: normal;
+  list-style: none;
+  padding: 0;
+
+  &__item:not(:first-child) {
+    margin-top: 9px;
+  }
+  
+  &__address {
+    margin: 0;
+  
+    /* font-weight: 400; */
+    /* font-size: 14px; */
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  
+  &__link {
+    color: var(--link-footer-color);
+    text-decoration: none;
+  
+    /* font-weight: 400; */
+    /* font-size: 14px; */
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  
+    @include transition ($property: color);
+    // transition-property: color;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-color);
+  }
+}
+
+// Footer Join
+.join {
+  /* display: flex; */
+  width: 206px;
+  height: 80px;
+  margin: 12px 0 0 70px;
+}
+
+.social-net__icon--different-colors {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--footer-icon-color);
+}
+
+// Footer - Submit
+.footer-submit {
+  width: 570px;
+  height: 86px;
+  margin: 12px 0 0 94px;
+}
+
+.submit-set {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &__email-form {
+    width: 358px;
+    height: 50px;
+    /* padding: 0; */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--footer-bgr-color);
+  }
+  
+  &__email-input {
+    width: 100%;
+    padding: 15px 0px 15px 16px;
+    background-color: var(--footer-bgr-color);
+    border: transparent;
+    outline: transparent;
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  &__email-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+    // Footer - Submit button
+  &__button-container {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+  }
+  
+  &__button {
+    padding: 10px 62px 10px 29px;
+  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+  
+    color: var(--footer-font-color);
+    background-color: var(--accent-bgr-color);
+    border-color: var(--accent-color);
+    border-radius: 4px;
+    border: none;
+  }
+  
+  &__button-icon {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+  }
+}
+
+
+
+
+
+
+
+

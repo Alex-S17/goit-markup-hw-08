@@ -1,0 +1,32 @@
+
+.close-modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--modal-btn-bgr);  
+
+  &__icon {
+    fill: var(--modal-btn-close);
+
+    @include transition ($property: fill);
+    // transition-property: fill;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &:hover .close-modal-btn__icon {
+    fill: var(--accent-color);
+  }
+}
+

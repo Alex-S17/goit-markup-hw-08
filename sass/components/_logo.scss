@@ -1,0 +1,28 @@
+.logo {
+  color: inherit;
+  text-decoration: none;
+  font-family: var(--secondary-font), sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  &__color {
+    color: var(--accent-color);
+  }  
+}
+
+.logo-navigation-set__logo {
+  margin-right: 93px;
+}
+
+.logo-address-wrapper {
+  margin-right: 0;
+
+  &__logo {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+

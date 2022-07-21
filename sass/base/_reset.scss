@@ -1,0 +1,12 @@
+.img {
+  /* Убирает зазор снизу картинки */
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

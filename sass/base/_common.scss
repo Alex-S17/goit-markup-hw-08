@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+body {
+  margin: 0;
+  color: var(--primary-color);
+  /* background-color: #fff; */
+  font-family: var(--primary-font), sans-serif;
+  font-size: 14px;
+}

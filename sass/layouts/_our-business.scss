@@ -1,0 +1,39 @@
+.business-set {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  &__image-wrapper {
+    position: relative;
+  }
+  
+  &__image {
+    /* Убирает зазор снизу картинки */
+    display: block;
+  }
+  
+  &__text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  
+    padding: 27px 0;
+    margin: 0;
+  
+    font-weight: 700;
+    /* font-size: 14px; */
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: var(--business-txt-col);
+    background-color: var(--business-txt-bgr);
+  } 
+}
+
