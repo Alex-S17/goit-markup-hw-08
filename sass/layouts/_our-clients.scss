@@ -1,16 +1,27 @@
 .clients-set {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
   padding: 0;
   margin: 0 auto;
   list-style: none;
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
+
+
+
+
+
+  // &__item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
   
   &__link {
     display: flex;
-    width: 170px;
+    width: 210px;
     height: 92px;
     align-items: center;
     justify-content: center;
@@ -24,6 +35,13 @@
     // transition-property: color, border;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    
+    }
+  
+  
   }
   
   &__link:hover {
