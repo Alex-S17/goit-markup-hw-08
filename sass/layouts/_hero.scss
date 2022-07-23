@@ -12,23 +12,40 @@
   background: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)), url('../images/bgr-image-optim.jpg');
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: var(--hero-bgr-color);
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    max-width: 1199px;
+    height: 400px;
+  }
 }
 
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
-  padding-top: 200px;
+  padding-top: 118px;
 
   color: var(--hero-title-color);
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  // @media screen and (min-width: 768px) {
+    
+  // }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero-button {

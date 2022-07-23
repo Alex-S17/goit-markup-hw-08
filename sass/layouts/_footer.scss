@@ -7,9 +7,83 @@
 
 .footer-set {
   display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    text-align: left;
+  }
+
+
+
+
+  &__logo-address {
+    // width: 232px;
+    width: 100%;
+    // text-align: center;
+    outline: 2px solid red;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 61px;        
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 0;
+    }
+
+
+  }
+
+  &__social-link {
+    // width: 206px;
+    width: 100%;
+    outline: 2px solid red;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 165px;
+      margin-top: 5px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+      margin-top: 12px;
+    }
+
+
+  }
+
+  &__submit {
+    flex-direction: column;
+    // width: 450px;
+    width: 100%;
+    outline: 2px solid red;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 151px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 570px;
+      margin-left: 93px;
+      margin-top: 12px;
+    }
+  }
+
+
+
+
 }
 
 // Footer Contacts
@@ -17,6 +91,7 @@
   font-style: normal;
   list-style: none;
   padding: 0;
+  margin-top: 20px;
 
   &__item:not(:first-child) {
     margin-top: 9px;
@@ -53,12 +128,6 @@
 }
 
 // Footer Join
-.join {
-  /* display: flex; */
-  width: 206px;
-  height: 80px;
-  margin: 12px 0 0 70px;
-}
 
 .social-net__icon--different-colors {
   background-color: rgba(255, 255, 255, 0.1);
@@ -66,30 +135,38 @@
 }
 
 // Footer - Submit
-.footer-submit {
-  width: 570px;
-  height: 86px;
-  margin: 12px 0 0 94px;
-}
+
 
 .submit-set {
-  display: flex;
+  display: block;
   list-style: none;
   padding: 0;
   margin: 0;
 
+  @media screen and (min-width: 1200px) {
+    display: flex;;
+  }
+
   &__email-form {
-    width: 358px;
+    // width: 450px;
     height: 50px;
+    margin: 20px auto;
     /* padding: 0; */
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: var(--footer-bgr-color);
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin: 0;
+    }
+
   }
   
   &__email-input {
     width: 100%;
+ 
     padding: 15px 0px 15px 16px;
     background-color: var(--footer-bgr-color);
     border: transparent;
@@ -110,7 +187,14 @@
     position: relative;
     width: 200px;
     height: 50px;
-    margin-left: 12px;
+      margin-left: auto;
+        margin-right: auto;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+      }
+
+
   }
   
   &__button {

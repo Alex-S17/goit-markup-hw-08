@@ -2,12 +2,16 @@
   display: flex;
   align-items: center;
   /* margin-left: 305px; */
-  margin: 0 0 0 305px;
+  // margin: 0 0 0 305px;
+  margin-left: 305px;
   padding: 0;
   list-style: none;
 
-  &__item {
-      display: flex;
+  // &__item {
+  //     display: flex;
+  // }
+  &__item+&__item {
+    margin-left: 30px;
   }
   
   &__mail-phone {
@@ -40,11 +44,7 @@
   &__mail-phone:hover,
   &__mail-phone:focus {
     color: var(--accent-color);
-  }
-  
-  &__item+&__item {
-    margin-left: 30px;
-  }
+  } 
 }
 
 

@@ -4,8 +4,16 @@
   height: 44px;
   /* margin: 0 32px 30px 32px; */
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 24px;
+  margin-right: auto;
+  margin-left: auto;
   justify-content: center;
   list-style: none;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
 
   &__item:not(:last-child) {
     margin-right: 10px;
@@ -41,10 +49,11 @@
   }
 }
 
-.team-set__social-net {
-  margin: 0 122px 24px 122px;
+//DELETE THIS!
+// .team-set__social-net {
+//   margin: 0 122px 24px 122px;
 
-  @media screen and (min-width: 1200px) {
-    margin: 0 32px 30px 32px;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     margin: 0 32px 30px 32px;
+//   }
+// }

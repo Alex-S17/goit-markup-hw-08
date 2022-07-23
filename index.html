@@ -22,54 +22,65 @@
   </head>
   <body>
     <!--Header-->
-    <header class="temporary-hidden">
+    <header>
       <div class="container container--flex">
-        <nav class="logo-navigation-set">
-          <a class="logo logo-navigation-set__logo" href="./index.html">
-            <span class="logo__color">Web</span>Studio</a
-          >
-          <ul class="navigation-set">
-            <li class="navigation-set__item">
-              <a class="navigation-set__link is-active" href="">Студия</a>
-            </li>
-            <li class="navigation-set__item">
-              <a class="navigation-set__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="navigation-set__item">
-              <a class="navigation-set__link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- Контакты в хедере -->
-        <ul class="header-contacts-set">
-          <li class="header-contacts-set__item">
-            <a class="header-contacts-set__mail-phone" href="mailto:info@devstudio.com">
-              <svg
-                class="header-contacts-set__icon header-contacts-set__icon--add-top-marg"
-                width="16"
-                height="12"
-              >
-                <use href="./images/icons.svg#header-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
+        <ul class="header">
+          <li>
+            <a class="logo" href="./index.html"> <span class="logo__color">Web</span>Studio</a>
           </li>
-          <li class="header-contacts-set__item">
-            <a class="header-contacts-set__mail-phone" href="tel:+380961111111">
-              <svg class="header-contacts-set__icon" width="10" height="16">
-                <use href="./images/icons.svg#header-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
+          <li>
+            <nav>
+              <ul class="navigation-set">
+                <li class="navigation-set__item">
+                  <a class="navigation-set__link is-active" href="./index.html">Студия</a>
+                </li>
+                <li class="navigation-set__item">
+                  <a class="navigation-set__link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="navigation-set__item">
+                  <a class="navigation-set__link" href="">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </li>
+          <li>
+            <!-- Контакты в хедере -->
+            <ul class="header-contacts-set">
+              <li class="header-contacts-set__item">
+                <a class="header-contacts-set__mail-phone" href="mailto:info@devstudio.com">
+                  <svg
+                    class="header-contacts-set__icon header-contacts-set__icon--add-top-marg"
+                    width="16"
+                    height="12"
+                  >
+                    <use href="./images/icons.svg#header-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="header-contacts-set__item">
+                <a class="header-contacts-set__mail-phone" href="tel:+380961111111">
+                  <svg class="header-contacts-set__icon" width="10" height="16">
+                    <use href="./images/icons.svg#header-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="temp"></div>
           </li>
         </ul>
+
+        <!-- ======================================= -->
       </div>
     </header>
 
     <!--Main-->
     <main>
       <!--Блок Герой-->
-      <section class="hero temporary-hidden">
+      <section class="hero">
         <div class="overlay">
           <h1 class="hero-title">
             Эффективные решения <br />
@@ -496,110 +507,102 @@
     </main>
 
     <!--Footer-->
-    <footer class="footer temporary-hidden">
+    <footer class="footer">
       <div class="container">
         <ul class="footer-set">
-          <li>
-            <div class="logo-address-wrapper">
-              <a class="logo logo-address-wrapper__logo" href="./index.html"
-                ><span class="logo__color">Web</span>Studio</a
-              >
-              <address>
-                <ul class="footer-contacts-set">
-                  <li class="footer-contacts-set__item">
-                    <p class="footer-contacts-set__address">г. Киев, пр-т Леси Украинки, 26</p>
-                  </li>
-                  <li class="footer-contacts-set__item">
-                    <a class="footer-contacts-set__link" href="mailto:info@example.com"
-                      >info@example.com</a
-                    >
-                  </li>
-                  <li class="footer-contacts-set__item">
-                    <a class="footer-contacts-set__link" href="tel:+380991111111"
-                      >+38 099 111 11 11</a
-                    >
-                  </li>
-                </ul>
-              </address>
-            </div>
-          </li>
-          <li>
-            <!-- Иконки соцсетей Присоединяйтесь -->
-            <div class="join">
-              <h3 class="section-subtitle join__section-subtitle">Присоединяйтесь</h3>
-              <ul class="social-net">
-                <li class="social-net__item">
-                  <a
-                    class="social-net__icon social-net__icon--different-colors"
-                    href="http://instagram.com"
-                  >
-                    <svg class="social-net__icon-color" width="20" height="20">
-                      <use href="./images/icons.svg#instagram"></use>
-                    </svg>
-                  </a>
+          <!-- Лого и адрес -->
+          <li class="footer-set__logo-address">
+            <a class="logo" href="./index.html"><span class="logo__color">Web</span>Studio</a>
+            <address>
+              <ul class="footer-contacts-set">
+                <li class="footer-contacts-set__item">
+                  <p class="footer-contacts-set__address">г. Киев, пр-т Леси Украинки, 26</p>
                 </li>
-                <li class="social-net__item">
-                  <a
-                    class="social-net__icon social-net__icon--different-colors"
-                    href="http://twitter.com"
+                <li class="footer-contacts-set__item">
+                  <a class="footer-contacts-set__link" href="mailto:info@example.com"
+                    >info@example.com</a
                   >
-                    <svg class="social-net__icon-color" width="20" height="20">
-                      <use href="./images/icons.svg#twitter"></use>
-                    </svg>
-                  </a>
                 </li>
-                <li class="social-net__item">
-                  <a
-                    class="social-net__icon social-net__icon--different-colors"
-                    href="http://facebook.com"
+                <li class="footer-contacts-set__item">
+                  <a class="footer-contacts-set__link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
                   >
-                    <svg class="social-net__icon-color" width="20" height="20">
-                      <use href="./images/icons.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-net__item">
-                  <a
-                    class="social-net__icon social-net__icon--different-colors"
-                    href="http://linkedin.com"
-                  >
-                    <svg class="social-net__icon-color" width="20" height="20">
-                      <use href="./images/icons.svg#linkedin"></use>
-                    </svg>
-                  </a>
                 </li>
               </ul>
-            </div>
+            </address>
           </li>
+          <!-- Иконки соцсетей Присоединяйтесь -->
+          <li class="footer-set__social-link">
+            <h3 class="section-subtitle join__section-subtitle">Присоединяйтесь</h3>
+            <ul class="social-net">
+              <li class="social-net__item">
+                <a
+                  class="social-net__icon social-net__icon--different-colors"
+                  href="http://instagram.com"
+                >
+                  <svg class="social-net__icon-color" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-net__item">
+                <a
+                  class="social-net__icon social-net__icon--different-colors"
+                  href="http://twitter.com"
+                >
+                  <svg class="social-net__icon-color" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-net__item">
+                <a
+                  class="social-net__icon social-net__icon--different-colors"
+                  href="http://facebook.com"
+                >
+                  <svg class="social-net__icon-color" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-net__item">
+                <a
+                  class="social-net__icon social-net__icon--different-colors"
+                  href="http://linkedin.com"
+                >
+                  <svg class="social-net__icon-color" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- Блок окна подписки на рассылку -->
+          <li class="footer-set__submit">
+            <h3 class="section-subtitle footer-submit__section-subtitle">
+              Подпишитесь на рассылку
+            </h3>
 
-          <li>
-            <!-- Блок окна подписки на рассылку -->
-            <div class="footer-submit">
-              <h3 class="section-subtitle footer-submit__section-subtitle">
-                Подпишитесь на рассылку
-              </h3>
-
-              <form>
-                <ul class="submit-set">
-                  <li class="submit-set__email-form">
-                    <label for="user-email"></label>
-                    <input
-                      class="submit-set__email-input"
-                      type="email"
-                      name="email"
-                      id="user-email"
-                      placeholder="E-mail"
-                    />
-                  </li>
-                  <li class="submit-set__button-container">
-                    <button class="submit-set__button" type="submit">Подписаться</button>
-                    <svg class="submit-set__button-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-icon-send-footer"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </form>
-            </div>
+            <form>
+              <ul class="submit-set">
+                <li class="submit-set__email-form">
+                  <label for="user-email"></label>
+                  <input
+                    class="submit-set__email-input"
+                    type="email"
+                    name="email"
+                    id="user-email"
+                    placeholder="E-mail"
+                  />
+                </li>
+                <li class="submit-set__button-container">
+                  <button class="submit-set__button" type="submit">Подписаться</button>
+                  <svg class="submit-set__button-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-icon-send-footer"></use>
+                  </svg>
+                </li>
+              </ul>
+            </form>
           </li>
         </ul>
       </div>

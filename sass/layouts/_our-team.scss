@@ -9,17 +9,20 @@
 
 
 
-  @media screen and (min-width: 1200px) {
-    display: flex;
+  @media screen and (min-width: 768px) {
     flex-direction: row;
+    flex-wrap: wrap;
     column-gap: 30px;
+    row-gap: 30px;
 
   }
 
 
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    column-gap: 30px;
 
-
-
+  }
 
 
 
@@ -38,8 +41,13 @@
   &__image {
     /* Убирает зазор снизу картинки */
     display: block;
-    width: 450px;
+    // width: 450px;
+    width: 100%;
     
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
 
     @media screen and (min-width: 1200px) {
       width: 270px;      
