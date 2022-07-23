@@ -1,15 +1,42 @@
 .portfolio-cards-set {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  row-gap: 30px;
   
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media screen and (min-width: 768px) {
+    column-gap: 30px;
+    // align-items: flex-start;
+  }
+
+ 
+  @media screen and (min-width: 1200px) {
+   column-gap: 30px;
+  }
+
+
 }
 
+
+
+
+
 .portfolio-card {
+  // flex-basis: calc((100% - 60px) / 3);
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  
+  }
+
+  @media screen and (min-width: 1200px) {
   flex-basis: calc((100% - 60px) / 3);
+    
+  }
 
 
   @include transition ($property: box-shadow cursor);
@@ -25,14 +52,23 @@
   
   &__image-box {
     position: relative;
-    width: 370px;
-    height: 294px;
+    // width: 370px;
+    // height: 294px;
     overflow: hidden;
   }
   
   &__image {
     /* Убирает зазор снизу картинки */
     display: block;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+    }
   }
   
   &__overlay {
@@ -52,6 +88,12 @@
   &__link {
     color: inherit;
     text-decoration: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
   }
   
   &__link:hover &__overlay {
@@ -60,7 +102,7 @@
   
   &__overlay-text {
     margin: 0;
-    padding: 63px 24px;
+    padding: 77px 24px;
   
     /* font-weight: 400; */
     font-size: 18px;
@@ -68,6 +110,10 @@
     letter-spacing: 0.03em;
   
     color: var(--portf-overlay-txt);
+
+    @media screen and (min-width: 1200px) {
+      padding: 63px 24px;
+    }
   }
   
   &__title {
@@ -76,6 +122,10 @@
     border-right: 1px solid var(--border-bottom-card);
     border-bottom: 1px solid var(--border-bottom-card);
     border-left: 1px solid var(--border-bottom-card);
+
+    @media screen and (min-width: 768px) {
+      flex-grow: 1;
+    }
   }
   
   &__name {

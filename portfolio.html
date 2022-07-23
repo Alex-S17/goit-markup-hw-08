@@ -20,7 +20,7 @@
   </head>
   <body>
     <!--Header-->
-    <header>
+    <header class="temporary-hidden">
       <div class="container container--flex">
         <ul class="header">
           <li>
@@ -108,8 +108,6 @@
                     class="portfolio-card__image"
                     src="./images/img-portfolio-technokrjack.jpg"
                     alt="Технокряк"
-                    width="370"
-                    height="294"
                   />
                   <div class="portfolio-card__overlay">
                     <p class="portfolio-card__overlay-text">
@@ -132,8 +130,6 @@
                     class="portfolio-card__image"
                     src="./images/img-portfolio-new-orlean.jpg"
                     alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
                   />
                   <div class="portfolio-card__overlay">
                     <p class="portfolio-card__overlay-text">
@@ -156,8 +152,6 @@
                     class="portfolio-card__image"
                     src="./images/img-portfolio-seafood.jpg"
                     alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
                   />
                   <div class="portfolio-card__overlay">
                     <p class="portfolio-card__overlay-text">
@@ -180,8 +174,6 @@
                     class="portfolio-card__image"
                     src="./images/img-portfolio-prime.jpg"
                     alt="Проект Prime"
-                    width="370"
-                    height="294"
                   />
                   <div class="portfolio-card__overlay">
                     <p class="portfolio-card__overlay-text">
@@ -204,8 +196,6 @@
                     class="portfolio-card__image"
                     src="./images/img-portfolio-boxes.jpg"
                     alt="Проект Boxes"
-                    width="370"
-                    height="294"
                   />
                   <div class="portfolio-card__overlay">
                     <p class="portfolio-card__overlay-text">
@@ -228,8 +218,6 @@
                     class="portfolio-card__image"
                     src="./images/img-portfolio-inspiration.jpg"
                     alt="Inspiration has no Borders"
-                    width="370"
-                    height="294"
                   />
                   <div class="portfolio-card__overlay">
                     <p class="portfolio-card__overlay-text">
@@ -252,8 +240,6 @@
                     class="portfolio-card__image"
                     src="./images/img-portfolio-limited-edition.jpg"
                     alt="Издание Limited Edition"
-                    width="370"
-                    height="294"
                   />
                   <div class="portfolio-card__overlay">
                     <p class="portfolio-card__overlay-text">
@@ -276,8 +262,6 @@
                     class="portfolio-card__image"
                     src="./images/img-portfolio-lab.jpg"
                     alt="Проект LAB"
-                    width="370"
-                    height="294"
                   />
                   <div class="portfolio-card__overlay">
                     <p class="portfolio-card__overlay-text">
@@ -300,8 +284,6 @@
                     class="portfolio-card__image"
                     src="./images/img-portfolio-growing-bis.jpg"
                     alt="Growing Business"
-                    width="370"
-                    height="294"
                   />
                   <div class="portfolio-card__overlay">
                     <p class="portfolio-card__overlay-text">
@@ -326,107 +308,99 @@
     <footer class="footer">
       <div class="container">
         <ul class="footer-set">
-          <li>
-            <div class="logo-address-wrapper">
-              <a class="logo logo-address-wrapper__logo" href="./index.html"
-                ><span class="logo__color">Web</span>Studio</a
-              >
-              <address>
-                <ul class="footer-contacts-set">
-                  <li class="footer-contacts-set__item">
-                    <p class="footer-contacts-set__address">г. Киев, пр-т Леси Украинки, 26</p>
-                  </li>
-                  <li class="footer-contacts-set__item">
-                    <a class="footer-contacts-set__link" href="mailto:info@example.com"
-                      >info@example.com</a
-                    >
-                  </li>
-                  <li class="footer-contacts-set__item">
-                    <a class="footer-contacts-set__link" href="tel:+380991111111"
-                      >+38 099 111 11 11</a
-                    >
-                  </li>
-                </ul>
-              </address>
-            </div>
-          </li>
-          <li>
-            <!-- Иконки соцсетей Присоединяйтесь -->
-            <div class="join">
-              <h3 class="section-subtitle join__section-subtitle">Присоединяйтесь</h3>
-              <ul class="social-net">
-                <li class="social-net__item">
-                  <a
-                    class="social-net__icon social-net__icon--different-colors"
-                    href="http://instagram.com"
-                  >
-                    <svg class="social-net__icon-color" width="20" height="20">
-                      <use href="./images/icons.svg#instagram"></use>
-                    </svg>
-                  </a>
+          <!-- Лого и адрес -->
+          <li class="footer-set__logo-address">
+            <a class="logo" href="./index.html"><span class="logo__color">Web</span>Studio</a>
+            <address>
+              <ul class="footer-contacts-set">
+                <li class="footer-contacts-set__item">
+                  <p class="footer-contacts-set__address">г. Киев, пр-т Леси Украинки, 26</p>
                 </li>
-                <li class="social-net__item">
-                  <a
-                    class="social-net__icon social-net__icon--different-colors"
-                    href="http://twitter.com"
+                <li class="footer-contacts-set__item">
+                  <a class="footer-contacts-set__link" href="mailto:info@example.com"
+                    >info@example.com</a
                   >
-                    <svg class="social-net__icon-color" width="20" height="20">
-                      <use href="./images/icons.svg#twitter"></use>
-                    </svg>
-                  </a>
                 </li>
-                <li class="social-net__item">
-                  <a
-                    class="social-net__icon social-net__icon--different-colors"
-                    href="http://facebook.com"
+                <li class="footer-contacts-set__item">
+                  <a class="footer-contacts-set__link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
                   >
-                    <svg class="social-net__icon-color" width="20" height="20">
-                      <use href="./images/icons.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-net__item">
-                  <a
-                    class="social-net__icon social-net__icon--different-colors"
-                    href="http://linkedin.com"
-                  >
-                    <svg class="social-net__icon-color" width="20" height="20">
-                      <use href="./images/icons.svg#linkedin"></use>
-                    </svg>
-                  </a>
                 </li>
               </ul>
-            </div>
+            </address>
           </li>
+          <!-- Иконки соцсетей Присоединяйтесь -->
+          <li class="footer-set__social-link">
+            <h3 class="section-subtitle join__section-subtitle">Присоединяйтесь</h3>
+            <ul class="social-net">
+              <li class="social-net__item">
+                <a
+                  class="social-net__icon social-net__icon--different-colors"
+                  href="http://instagram.com"
+                >
+                  <svg class="social-net__icon-color" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-net__item">
+                <a
+                  class="social-net__icon social-net__icon--different-colors"
+                  href="http://twitter.com"
+                >
+                  <svg class="social-net__icon-color" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-net__item">
+                <a
+                  class="social-net__icon social-net__icon--different-colors"
+                  href="http://facebook.com"
+                >
+                  <svg class="social-net__icon-color" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-net__item">
+                <a
+                  class="social-net__icon social-net__icon--different-colors"
+                  href="http://linkedin.com"
+                >
+                  <svg class="social-net__icon-color" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- Блок окна подписки на рассылку -->
+          <li class="footer-set__submit">
+            <h3 class="section-subtitle footer-submit__section-subtitle">
+              Подпишитесь на рассылку
+            </h3>
 
-          <li>
-            <!-- Блок окна подписки на рассылку -->
-            <div class="footer-submit">
-              <h3 class="section-subtitle footer-submit__section-subtitle">
-                Подпишитесь на рассылку
-              </h3>
-
-              <form>
-                <ul class="submit-set">
-                  <li class="submit-set__email-form">
-                    <label for="user-email"></label>
-                    <input
-                      class="submit-set__email-input"
-                      type="email"
-                      name="email"
-                      id="user-email"
-                      placeholder="E-mail"
-                    />
-                  </li>
-                  <li class="submit-set__button-container">
-                    <button class="submit-set__button" type="submit">Подписаться</button>
-                    <svg class="submit-set__button-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-icon-send-footer"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </form>
-            </div>
+            <form>
+              <ul class="submit-set">
+                <li class="submit-set__email-form">
+                  <label for="user-email"></label>
+                  <input
+                    class="submit-set__email-input"
+                    type="email"
+                    name="email"
+                    id="user-email"
+                    placeholder="E-mail"
+                  />
+                </li>
+                <li class="submit-set__button-container">
+                  <button class="submit-set__button" type="submit">Подписаться</button>
+                  <svg class="submit-set__button-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-icon-send-footer"></use>
+                  </svg>
+                </li>
+              </ul>
+            </form>
           </li>
         </ul>
       </div>

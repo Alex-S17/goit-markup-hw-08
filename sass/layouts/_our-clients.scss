@@ -9,11 +9,17 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    flex-wrap: nowrap;
   }
 
 
-
-
+  &__item {
+    flex-basis: calc((100% - 30px) / 2);
+    
+    @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
+    }
+  }
 
   // &__item:not(:last-child) {
   //   margin-right: 30px;
@@ -21,7 +27,6 @@
   
   &__link {
     display: flex;
-    width: 210px;
     height: 92px;
     align-items: center;
     justify-content: center;
@@ -35,19 +40,6 @@
     // transition-property: color, border;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
-    @media screen and (min-width: 768px) {
-      width: 226px;
-
-    }
-
-
-
-    @media screen and (min-width: 1200px) {
-      width: 170px;
-    
-    }
-  
   
   }
   
