@@ -1,0 +1,70 @@
+<!--Header-->
+<header>
+  <div class="container container--flex">
+    <ul class="header">
+      <!-- Лого -->
+      <li>
+        <a class="logo" href="./index.html"> <span class="logo__color">Web</span>Studio</a>
+      </li>
+      <!-- Навигация в хедере -->
+      <li>
+        <nav>
+          <ul class="navigation-set">
+            <li class="navigation-set__item">
+              <a class="navigation-set__link is-active" href="./index.html">Студия</a>
+            </li>
+            <li class="navigation-set__item">
+              <a class="navigation-set__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="navigation-set__item">
+              <a class="navigation-set__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </li>
+      <!-- Контакты в хедере -->
+      <li>
+        <ul class="header-contacts-set">
+          <li class="header-contacts-set__item">
+            <a class="header-contacts-set__mail-phone" href="mailto:info@devstudio.com">
+              <svg
+                class="header-contacts-set__icon header-contacts-set__icon--add-top-marg"
+                width="16"
+                height="12"
+              >
+                <use href="./images/icons.svg#header-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header-contacts-set__item">
+            <a class="header-contacts-set__mail-phone" href="tel:+380961111111">
+              <svg class="header-contacts-set__icon" width="10" height="16">
+                <use href="./images/icons.svg#header-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <button
+          class="burger-button"
+          type="button"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="menu-mobile"
+        >
+          <svg width="24" height="16" aria-label="Кнопка мобильного меню">
+            <use class="icon-burger-menu" href="./images/icons.svg#icon-burger-menu"></use>
+            <use class="icon-burger-close" href="./images/icons.svg#icon-burger-close"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu" id="mobile-menu" data-menu>menu</div>
+      </li>
+    </ul>
+
+    <!-- ======================================= -->
+  </div>
+</header>

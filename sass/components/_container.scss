@@ -27,6 +27,7 @@
   }
 
   &--flex {
+    position: relative;
     display: flex;
     border-bottom: 1px solid var(--border-bottom-header);
   }
