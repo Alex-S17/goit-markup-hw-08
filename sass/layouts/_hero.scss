@@ -5,8 +5,8 @@
 }
 
 .overlay {
-  max-width: 1600px;
-  height: 600px;
+  // max-width: 479px;
+  // height: 400px;
   margin-left: auto;
   margin-right: auto;
   background: linear-gradient(to right,
@@ -17,11 +17,36 @@
   background-size: cover;
   background-color: var(--hero-bgr-color);
 
+
+
+  @media screen and (max-width: 479px) {
+    max-width: 479px;
+    height: 400px;
+  }
+
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     max-width: 1199px;
     height: 400px;
   }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .hero-title {
   margin-top: 0;
@@ -86,6 +111,9 @@
   height: 100%;
   z-index: 3;
   opacity: 1;
+  overflow-y: scroll;
+
+  // padding: 93px 15px 94px 15px;
   
 
   @include transition ($property: opacity);

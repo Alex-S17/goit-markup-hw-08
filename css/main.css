@@ -144,6 +144,10 @@ body {
   font-size: 14px;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .img {
   /* Убирает зазор снизу картинки */
   display: block;
@@ -627,8 +631,6 @@ body {
 }
 
 .overlay {
-  max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bgr-image-optim.jpg");
@@ -638,10 +640,22 @@ body {
   background-size: cover;
   background-color: var(--hero-bgr-color);
 }
+@media screen and (max-width: 479px) {
+  .overlay {
+    max-width: 479px;
+    height: 400px;
+  }
+}
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .overlay {
     max-width: 1199px;
     height: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    max-width: 1600px;
+    height: 600px;
   }
 }
 
@@ -699,6 +713,7 @@ body {
   height: 100%;
   z-index: 3;
   opacity: 1;
+  overflow-y: scroll;
   -webkit-transition-property: opacity;
   transition-property: opacity;
   -webkit-transition-duration: 250ms;
@@ -718,14 +733,15 @@ body {
 
 .modal {
   position: absolute;
-  top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 450px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 100%;
+  max-width: 450px;
   height: 609px;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  padding: 40px;
+  -webkit-transform: translate(-50%) scale(1);
+          transform: translate(-50%) scale(1);
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
@@ -739,15 +755,35 @@ body {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--modal-bgr-color);
 }
+@media screen and (max-width: 767px) {
+  .modal {
+    top: 93px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 208px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 528px;
     height: 581px;
   }
 }
 
 .modal-slogan {
-  padding: 40px 40px 12px 40px;
+  padding-bottom: 12px;
   margin: 0;
   font-weight: 700;
   font-size: 20px;
@@ -796,14 +832,16 @@ body {
 }
 
 .modal-form {
-  width: 528px;
+  width: 100%;
 }
 
 .form-set {
-  position: absolute;
-  width: 448px;
-  top: 75px;
-  left: 40px;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .form-set {
+    top: 75px;
+  }
 }
 
 .field-block-wrap {
@@ -829,6 +867,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 .field-block-wrap__input {
   height: 40px;
@@ -922,10 +961,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* font-size: 14px; */
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+}
+@media screen and (min-width: 1200px) {
+  .custom-checkbox__label {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 .custom-checkbox__link {
   text-decoration: none;

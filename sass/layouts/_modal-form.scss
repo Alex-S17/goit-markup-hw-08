@@ -1,12 +1,14 @@
 .modal-form {
-  width: 528px;
+  // width: 528px;
+  width: 100%;
 }
 
 .form-set {
-  position: absolute;
-  width: 448px;
-  top: 75px;
-  left: 40px;
+ width: 100%;
+ 
+ @media screen and (min-width: 1200px) {
+    top: 75px;
+  }
 }
 
 // Поля модальной формы
@@ -32,6 +34,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
+
+    width: 100%;
   }
   
   &__input {
@@ -72,6 +76,9 @@
     fill: var(--accent-color);
   }
   
+
+
+
 // Блок комментария
   &__textarea-field {
     height: 120px;
@@ -116,6 +123,7 @@
   align-items: center;
   justify-content: center;
 
+  
   &__icon {
     margin-right: 8px;
     border: 2px solid var(--primary-color);
@@ -132,11 +140,17 @@
   &__label {
     display: flex;
     align-items: center;
-    /* font-size: 14px; */
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
   
     color: var(--secondary-color);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
   }
   
   &__link {
