@@ -20,51 +20,92 @@
   </head>
   <body>
     <!--Header-->
-    <header class="temporary-hidden">
+    <header>
       <div class="container container--flex">
         <ul class="header">
+          <!-- Лого -->
           <li>
             <a class="logo" href="./index.html"> <span class="logo__color">Web</span>Studio</a>
           </li>
+          <!-- Кнопка мобильного меню -->
           <li>
-            <nav>
-              <ul class="navigation-set">
-                <li class="navigation-set__item">
-                  <a class="navigation-set__link" href="./index.html">Студия</a>
+            <button
+              class="burger-button"
+              type="button"
+              data-menu-button
+              aria-expanded="false"
+              aria-controls="menu-mobile"
+            >
+              <svg width="24" height="16" aria-label="Кнопка мобильного меню">
+                <use
+                  class="burger-button__icon-menu"
+                  href="./images/icons.svg#icon-burger-menu"
+                ></use>
+                <use
+                  class="burger-button__icon-close"
+                  href="./images/icons.svg#icon-burger-close"
+                ></use>
+              </svg>
+            </button>
+          </li>
+          <!-- Навигация и контакты в хедере -->
+          <li>
+            <div class="mobile-menu" id="mobile-menu" data-menu>
+              <!-- Навигация в хедере -->
+              <nav>
+                <ul class="navigation-set">
+                  <li class="navigation-set__item">
+                    <a class="navigation-set__link is-active" href="./index.html">Студия</a>
+                  </li>
+                  <li class="navigation-set__item">
+                    <a class="navigation-set__link" href="./portfolio.html">Портфолио</a>
+                  </li>
+                  <li class="navigation-set__item">
+                    <a class="navigation-set__link" href="">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <!-- Контакты в хедере -->
+
+              <ul class="header-contacts-set">
+                <li class="header-contacts-set__item">
+                  <a class="header-contacts-set__mail-phone" href="mailto:info@devstudio.com">
+                    <svg
+                      class="header-contacts-set__icon header-contacts-set__icon--add-top-marg"
+                      width="16"
+                      height="12"
+                    >
+                      <use href="./images/icons.svg#header-envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
                 </li>
-                <li class="navigation-set__item">
-                  <a class="navigation-set__link is-active" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="navigation-set__item">
-                  <a class="navigation-set__link" href="">Контакты</a>
+                <li class="header-contacts-set__item">
+                  <a class="header-contacts-set__mail-phone" href="tel:+380961111111">
+                    <svg class="header-contacts-set__icon" width="10" height="16">
+                      <use href="./images/icons.svg#header-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
                 </li>
               </ul>
-            </nav>
-          </li>
-          <li>
-            <!-- Контакты в хедере -->
-            <ul class="header-contacts-set">
-              <li class="header-contacts-set__item">
-                <a class="header-contacts-set__mail-phone" href="mailto:info@devstudio.com">
-                  <svg
-                    class="header-contacts-set__icon header-contacts-set__icon--add-top-marg"
-                    width="16"
-                    height="12"
-                  >
-                    <use href="./images/icons.svg#header-envelope"></use>
-                  </svg>
-                  info@devstudio.com
-                </a>
-              </li>
-              <li class="header-contacts-set__item">
-                <a class="header-contacts-set__mail-phone" href="tel:+380961111111">
-                  <svg class="header-contacts-set__icon" width="10" height="16">
-                    <use href="./images/icons.svg#header-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11
-                </a>
-              </li>
-            </ul>
+              <!-- Соцсети в хедере в мобильном меню -->
+              <ul class="mobile-menu-social">
+                <li class="mobile-menu-social__item">
+                  <a class="mobile-menu-social__links" href="http://instagram.com">Instagram</a>
+                </li>
+                <li class="mobile-menu-social__item">
+                  <a class="mobile-menu-social__links" href="http://twitter.com">Twitter</a>
+                </li>
+                <li class="mobile-menu-social__item">
+                  <a class="mobile-menu-social__links" href="http://facebook.com">Facebook</a>
+                </li>
+                <li class="mobile-menu-social__item">
+                  <a class="mobile-menu-social__links" href="http://linkedin.com">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
 
