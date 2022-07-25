@@ -45,7 +45,7 @@
 // Mobile menu
 .mobile-menu {
   display: none;
-  position: fixed;
+  // position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -54,6 +54,11 @@
   overflow-y: scroll;
   padding: 48px 80px 48px 40px;
   background-color: var(--primary-bgr-color);
+
+
+  @media screen and (max-width: 767px) {
+        position: fixed;
+    }
 
   
 
@@ -76,7 +81,7 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    position: static;
+    // position: static;
     padding: 0
           // height: 100vh;
   }
@@ -152,7 +157,7 @@
     &::after {
       position: absolute;
       content: '';
-      bottom: -1px;
+      bottom: 0;
       left: 0;
   
       width: 100%;
