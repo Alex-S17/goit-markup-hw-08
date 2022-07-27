@@ -16,16 +16,16 @@
     // mobileLogoRef.classList.toggle("logo--hidden");
     mobileBodyRef.classList.toggle("no-scroll--burger-menu");
 
-    // window.matchMedia('(min-width: 768px)').addEventListener('change', (e) => {
-    //   if (!e.matches) return;
-    //   mobileMenuRef.classList.remove("is-open");
-    //   mobileBodyRef.classList.remove("no-scroll--burger-menu");
-    //   mobileLogoRef.classList.remove("logo--hidden");
-    //   menuBtnRef.classList.remove("is-open");
+    window.matchMedia('(min-width: 768px)').addEventListener('change', (e) => {
+      if (!e.matches) return;
+      mobileMenuRef.classList.remove("is-open");
+      mobileBodyRef.classList.remove("no-scroll--burger-menu");
+      // mobileLogoRef.classList.remove("logo--hidden");
+      menuBtnRef.classList.remove("is-open");
 
-    //   menuBtnRef.setAttribute('aria-expanded', false);
+      menuBtnRef.setAttribute('aria-expanded', false);
 
-    // });
+    });
 
   });
 })();
