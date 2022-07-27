@@ -44,7 +44,7 @@
 
 // Mobile menu
 .mobile-menu {
-  display: none;
+  // display: none;
   // position: fixed;
   top: 0;
   left: 0;
@@ -55,14 +55,14 @@
   // padding: 48px 80px 48px 40px;
   background-color: var(--primary-bgr-color);
 
+  transform: scale(0.0001);
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (max-width: 767px) {
         position: fixed;
         overflow-y: scroll;
           padding: 48px 40px;
     }
-
-  
 
   @media screen and (min-width: 768px) {
     height: 100%;
@@ -72,6 +72,8 @@
   &.is-open {
     @media screen and (max-width: 767px) {
       display: flex;
+      transform: scale(1);
+
       flex-direction: column;
       justify-content: space-between;   
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
@@ -80,14 +82,13 @@
     }        
   }
 
-
   @media screen and (min-width: 768px) {
     display: flex;
+    transform: scale(1);
     // position: static;
     padding: 0
           // height: 100vh;
   }
-
 }
 
 // Header navigation
@@ -114,7 +115,6 @@
   // }
 
  
-
   &__link {
     // display: flex;
     // Базовые парметры для мобилки
@@ -190,8 +190,6 @@
     margin-bottom: 64px;  
   }
 
- 
-
   @media screen and (max-width: 767px) {
     &__item:first-child {
       order: 2;
@@ -210,20 +208,13 @@
 
   @media screen and (max-width: 767px) and (max-width: 449px) {
     &__item:first-child {
-      // order: 2;
       font-size: 20px;
-      // line-height: 1.17;
     }
     
     &__item:last-child {
       font-size: 26px;
-      // line-height: 1.18;
-      // .header-contacts-set__mail-phone {
-      // color: var(--accent-color);}
     }
   }
-
-
 
   @media screen and (min-width: 768px) {
    // align-items: center;
@@ -231,7 +222,6 @@
     row-gap: 10px;
     margin-left: 84px;
   }
-
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
