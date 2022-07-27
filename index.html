@@ -278,37 +278,94 @@
           <ul class="business-set">
             <li class="business-set__item">
               <div class="business-set__image-wrapper">
-                <img
-                  class="business-set__image"
-                  src="./images/img-box1.jpg"
-                  alt="Фото деятельности-1"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/business/desktop/business-1_desktop.webp    1x,
+                      ./images/business/desktop/business-1_desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/business/desktop/business-1_desktop.jpg    1x,
+                      ./images/business/desktop/business-1_desktop@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    class="business-set__image"
+                    src="./images/business/desktop/business-1_desktop.jpg"
+                    alt="Десктопные приложения"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="business-set__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="business-set__item">
               <div class="business-set__image-wrapper">
-                <img
-                  class="business-set__image"
-                  src="./images/img-box2.jpg"
-                  alt="Фото деятельности-2"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/business/desktop/business-2_desktop.webp    1x,
+                      ./images/business/desktop/business-2_desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/business/desktop/business-2_desktop.jpg    1x,
+                      ./images/business/desktop/business-2_desktop@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    class="business-set__image"
+                    src="./images/business/desktop/business-2_desktop.jpg"
+                    alt="Мобильные приложения"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="business-set__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="business-set__item">
               <div class="business-set__image-wrapper">
-                <img
-                  class="business-set__image"
-                  src="./images/img-box3.jpg"
-                  alt="Фото деятельности-3"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/business/desktop/business-3_desktop.webp    1x,
+                      ./images/business/desktop/business-3_desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/business/desktop/business-3_desktop.jpg    1x,
+                      ./images/business/desktop/business-3_desktop@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    class="business-set__image"
+                    src="./images/business/desktop/business-3_desktop.jpg"
+                    alt="Дизайнерские решения"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="business-set__text">Дизайнерские решения</p>
               </div>
             </li>
@@ -322,11 +379,65 @@
           <ul class="team-set">
             <!-- Демьяненко -->
             <li class="team-set__item">
-              <img
-                class="team-set__image"
-                src="./images/img-demjanenko.jpg"
-                alt="Игорь Демьяненко"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/desktop/img-1_small.webp    1x,
+                    ./images/team/desktop/img-1_small@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/desktop/img-1_small.jpg    1x,
+                    ./images/team/desktop/img-1_small@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/tablet/img-1_medium.webp    1x,
+                    ./images/team/tablet/img-1_medium@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/tablet/img-1_medium.jpg    1x,
+                    ./images/team/tablet/img-1_medium@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mobile/img-1_large.webp    1x,
+                    ./images/team/mobile/img-1_large@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mobile/img-1_large.jpg    1x,
+                    ./images/team/mobile/img-1_large@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team-set__image"
+                  src="./images/team/mobile/img-1_large.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-set__member-wrapper">
                 <h3 class="team-set__name">Игорь Демьяненко</h3>
                 <p class="team-set__text" lang="en">Product Designer</p>
@@ -367,7 +478,65 @@
 
             <!-- Репина -->
             <li class="team-set__item">
-              <img class="team-set__image" src="./images/img-repina.jpg" alt="Ольга Репина" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/desktop/img-2_small.webp    1x,
+                    ./images/team/desktop/img-2_small@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/desktop/img-2_small.jpg    1x,
+                    ./images/team/desktop/img-2_small@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/tablet/img-2_medium.webp    1x,
+                    ./images/team/tablet/img-2_medium@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/tablet/img-2_medium.jpg    1x,
+                    ./images/team/tablet/img-2_medium@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mobile/img-2_large.webp    1x,
+                    ./images/team/mobile/img-2_large@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mobile/img-2_large.jpg    1x,
+                    ./images/team/mobile/img-2_large@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team-set__image"
+                  src="./images/team/mobile/img-2_large.jpg"
+                  alt="Ольга Репина"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-set__member-wrapper">
                 <h3 class="team-set__name">Ольга Репина</h3>
                 <p class="team-set__text" lang="en">Frontend Developer</p>
@@ -409,7 +578,65 @@
 
             <!-- Тарасов -->
             <li class="team-set__item">
-              <img class="team-set__image" src="./images/img-tarasov.jpg" alt="Николай Тарасов" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/desktop/img-4_small.webp    1x,
+                    ./images/team/desktop/img-3_small@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/desktop/img-3_small.jpg    1x,
+                    ./images/team/desktop/img-3_small@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/tablet/img-3_medium.webp    1x,
+                    ./images/team/tablet/img-3_medium@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/tablet/img-3_medium.jpg    1x,
+                    ./images/team/tablet/img-3_medium@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mobile/img-3_large.webp    1x,
+                    ./images/team/mobile/img-3_large@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mobile/img-3_large.jpg    1x,
+                    ./images/team/mobile/img-3_large@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team-set__image"
+                  src="./images/team/mobile/img-3_large.jpg"
+                  alt="Николай Тарасов"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-set__member-wrapper">
                 <h3 class="team-set__name">Николай Тарасов</h3>
                 <p class="team-set__text" lang="en">Marketing</p>
@@ -451,7 +678,65 @@
 
             <!-- Ермаков -->
             <li class="team-set__item">
-              <img class="team-set__image" src="./images/img-ermakov.jpg" alt="Михаил Ермаков" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/desktop/img-4_small.webp    1x,
+                    ./images/team/desktop/img-4_small@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/desktop/img-4_small.jpg    1x,
+                    ./images/team/desktop/img-4_small@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/tablet/img-4_medium.webp    1x,
+                    ./images/team/tablet/img-4_medium@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/tablet/img-4_medium.jpg    1x,
+                    ./images/team/tablet/img-4_medium@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mobile/img-4_large.webp    1x,
+                    ./images/team/mobile/img-4_large@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mobile/img-4_large.jpg    1x,
+                    ./images/team/mobile/img-4_large@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team-set__image"
+                  src="./images/team/mobile/img-4_large.jpg"
+                  alt="Михаил Ермаков"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-set__member-wrapper">
                 <h3 class="team-set__name">Михаил Ермаков</h3>
                 <p class="team-set__text" lang="en">UI Designer</p>
